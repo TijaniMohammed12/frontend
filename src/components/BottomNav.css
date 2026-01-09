@@ -1,0 +1,38 @@
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 1000;
+}
+
+.bottom-nav-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  font-size: 14px;
+  color: #555;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.bottom-nav-btn .icon {
+  font-size: 20px;
+}
+
+.bottom-nav-btn.active {
+  color: #007bff;
+}
+
+.bottom-nav-btn:hover {
+  color: #007bff;
+}

@@ -1,0 +1,122 @@
+/* src/pages/PremiumPage.css - Social Hub Premium style */
+.premium-page {
+  max-width: 1100px;
+  margin: 28px auto;
+  padding: 20px;
+  font-family: Inter, system-ui, -apple-system, Roboto, Arial;
+  color: #0f172a;
+}
+
+/* hero */
+.premium-hero {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 20px;
+  align-items: center;
+  background: linear-gradient(135deg, rgba(99,102,241,0.06), rgba(6,182,212,0.03));
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(12,12,50,0.04);
+}
+
+.hero-left h1 {
+  margin: 0 0 6px 0;
+  font-size: 28px;
+}
+
+.hero-sub { color: #475569; margin-bottom: 12px; }
+
+.hero-features {
+  margin: 0;
+  padding-left: 18px;
+  color: #334;
+}
+
+.hero-right .hero-card {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 10px 28px rgba(12,12,50,0.04);
+  position: relative;
+}
+
+.price-tag {
+  position: absolute;
+  top: -12px;
+  right: 12px;
+  background: linear-gradient(90deg,#ffb347,#ffcc33);
+  color: #122;
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+/* plans */
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.plan {
+  background: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 10px 26px rgba(12,12,50,0.04);
+  border: 1px solid rgba(12,12,50,0.04);
+  position: relative;
+}
+
+.plan.featured {
+  border: 1px solid rgba(124,58,237,0.12);
+  background: linear-gradient(180deg, rgba(124,58,237,0.03), white);
+  transform: translateY(-4px);
+}
+
+.ribbon {
+  position: absolute;
+  right: 12px;
+  top: -10px;
+  background: linear-gradient(90deg,#ff7a7a,#ffb86b);
+  color: white;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.plan-name { font-size: 16px; margin: 0 0 6px 0; }
+.plan-price { font-weight: 800; margin-bottom: 8px; color: #0f172a; }
+.plan-perks { padding-left: 18px; color: #334; margin-bottom: 10px; }
+
+.choose {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  background: linear-gradient(90deg,#7c3aed,#06b6d4);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* info */
+.premium-info { margin-top: 22px; }
+
+.info-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  margin-top: 12px;
+}
+
+.info {
+  background: white;
+  padding: 12px;
+  border-radius: 10px;
+  box-shadow: 0 10px 26px rgba(12,12,50,0.03);
+}

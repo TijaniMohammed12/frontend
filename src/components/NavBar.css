@@ -1,0 +1,55 @@
+/* src/components/NavBar.css - Unique Pulse Style */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #0077b6, #00b4d8); /* Gradient color */
+  padding: 12px 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  backdrop-filter: blur(8px);
+  animation: pulseAnimation 3s infinite;
+}
+
+@keyframes pulseAnimation {
+  0%, 100% { box-shadow: 0 4px 12px rgba(0, 119, 182, 0.4); }
+  50% { box-shadow: 0 6px 18px rgba(0, 180, 216, 0.6); }
+}
+
+.nav-logo {
+  color: #fff;
+  font-weight: 800;
+  font-size: 22px;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-btn {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: #ffd60a;
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+

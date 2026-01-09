@@ -1,0 +1,34 @@
+/* Burger menu container */
+.bm-menu {
+  background: #0077b6;
+  padding: 2.5em 1.5em;
+  font-size: 1.15em;
+}
+
+/* Individual menu items */
+.bm-item {
+  display: block;
+  color: white;
+  padding: 0.5em 0;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.bm-item:hover {
+  color: #ffcc00;
+}
+
+/* Optional: override default burger icon position */
+.bm-burger-button {
+  position: fixed;
+  width: 25px;
+  height: 20px;
+  right: 20px;
+  top: 20px;
+}
+
+/* Optional: overlay background when menu is open */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}

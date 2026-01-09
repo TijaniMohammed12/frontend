@@ -1,0 +1,93 @@
+/* src/pages/SignupPage.css */
+
+/* Overall page styling */
+.container {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
+/* Heading */
+.container h2 {
+  font-size: 28px;
+  color: #0077b6;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+/* Input fields */
+.container input {
+  width: 100%;
+  padding: 14px 20px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.container input:focus {
+  outline: none;
+  border-color: #0077b6;
+  box-shadow: 0 0 6px rgba(0, 119, 182, 0.3);
+}
+
+/* Buttons */
+.container button {
+  width: 100%;
+  padding: 14px 20px;
+  background: #0077b6;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.container button:hover {
+  background: #005f8b;
+  transform: translateY(-2px);
+}
+
+/* Links text */
+.container p {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #555;
+}
+
+.container p span,
+.container p a {
+  color: #0077b6;
+  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.container p span:hover,
+.container p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .container {
+    margin: 40px 20px;
+    padding: 30px;
+  }
+
+  .container h2 {
+    font-size: 24px;
+  }
+
+  .container button {
+    font-size: 16px;
+  }
+}
